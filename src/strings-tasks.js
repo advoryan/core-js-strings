@@ -303,7 +303,7 @@ function containsSubstring(str, substring) {
  */
 function countVowels(str) {
   const vowels = 'aeiouyAEIOUY';
-  return Array.from(str).filter(char => vowels.includes(char)).length;
+  return Array.from(str).filter((char) => vowels.includes(char)).length;
 }
 
 /**
@@ -321,7 +321,7 @@ function countVowels(str) {
  */
 function isPalindrome(str) {
   const reversedStr = str.split('').reverse().join('');
-  return str === reversedStr;
+  return str.toLowerCase() === reversedStr.toLowerCase();
 }
 
 /**

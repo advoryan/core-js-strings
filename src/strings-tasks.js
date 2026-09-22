@@ -132,7 +132,7 @@ function removeTrailingWhitespaces(value) {
  */
 function repeatString(str, times) {
   const isStrValid = typeof str === 'string';
-  const isTimesValid = Number.isInteger(times);
+  const isTimesValid = Number.isInteger(times) && times > 0;
   return isStrValid && isTimesValid ? str.repeat(times) : '';
 }
 

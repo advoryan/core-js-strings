@@ -54,7 +54,7 @@ function isString(value) {
  *   concatenateStrings('', 'bb') => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  return String(value1) + String(value2);
+  return String(value1).concat(String(value2));
 }
 
 /**
